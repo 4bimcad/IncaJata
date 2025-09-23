@@ -170,22 +170,6 @@
                                     <td class="px-4 py-2 font-semibold"><strong>Materia prima:</strong></td>
                                     <td class="px-4 py-2">Oro</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="px-4 py-2 font-semibold"><strong>Volumen:</strong></td>
-                                    <td class="px-4 py-2">~ 2,447,100 toneladas métricas</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-2 font-semibold"><strong>Ley de Reservas:</strong></td>
-                                    <td class="px-4 py-2">~ 0.2 g/tm</td>
-                                </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="px-4 py-2 font-semibold"><strong>Reservas:</strong></td>
-                                    <td class="px-4 py-2">~ 318 kg</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-2 font-semibold"><strong>Vida Útil de la Mina:</strong></td>
-                                    <td class="px-4 py-2">~ 10 años</td>
-                                </tr>
                                 <tr>
                                     <td class="px-4 py-2 font-semibold"><strong>Código de Informe:</strong></td>
                                     <td class="px-4 py-2">43-101</td>
@@ -204,21 +188,6 @@
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="px-4 py-2 font-semibold"><strong>Resumen de Proyecto:</strong></td>
-                                    <td class="px-4 py-2 flex flex-wrap items-center gap-2">
-                                        v 5.0
-                                        <a href="proyectos/Resumen_PAN_KOTSKYI_v5.pdf" download
-                                            class="btn btn-primary btn-sm flex items-center gap-1" target="_blank">
-                                            <i class="fa fa-download"></i> Descargar PDF (64.5Kb)
-                                        </a>
-                                        <button id="copyResumenBtn"
-                                            class="btn btn-primary btn-sm flex items-center gap-1"
-                                            title="Copiar enlace">
-                                            <i class="fa fa-copy"></i> Copiar enlace
-                                        </button>
-                                    </td>
-                                </tr>
 
                                 <script>
                                     // 
@@ -229,17 +198,6 @@
                                             alert("Enlace del proyecto copiado al portapapeles!");
                                         }).catch(err => {
                                             console.error("Error al copiar el enlace del proyecto: ", err);
-                                        });
-                                    });
-
-                                    // 
-                                    const copyResumenBtn = document.getElementById('copyResumenBtn');
-                                    copyResumenBtn.addEventListener('click', () => {
-                                        const link = "http://incajata.org.pe/proyectos/Resumen_PAN_KOTSKYI_v5.pdf";
-                                        navigator.clipboard.writeText(link).then(() => {
-                                            alert("Enlace del resumen copiado al portapapeles!");
-                                        }).catch(err => {
-                                            console.error("Error al copiar el enlace del resumen: ", err);
                                         });
                                     });
                                 </script>
