@@ -188,19 +188,49 @@
                                         </button>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="px-4 py-2 font-semibold"><strong>Presentación:</strong></td>
+                                    <td class="px-4 py-2 flex flex-wrap items-center gap-2"> v 5.0
+                                        <a href="proyectos/Presentacion_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf" download
+                                            class="btn btn-primary btn-sm flex items-center gap-1" target="_blank">
+                                            <i class="fa fa-download"></i> Descargar PDF (9.81 MB)
+                                        </a>
+                                        <button id="copyPresentationBtn"
+                                            class="btn btn-primary btn-sm flex items-center gap-1"
+                                            title="Copiar enlace">
+                                            <i class="fa fa-copy"></i> Copiar enlace
+                                        </button>
+                                    </td>
+                                </tr>
 
                                 <script>
-                                    // 
+                                    // Botón para copiar enlace del PROYECTO
                                     const copyProjectBtn = document.getElementById('copyProjectBtn');
-                                    copyProjectBtn.addEventListener('click', () => {
-                                        const link = "http://incajata.org.pe/proyectos/Proyecto_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf";
-                                        navigator.clipboard.writeText(link).then(() => {
-                                            alert("Enlace del proyecto copiado al portapapeles!");
-                                        }).catch(err => {
-                                            console.error("Error al copiar el enlace del proyecto: ", err);
+                                    if (copyProjectBtn) {
+                                        copyProjectBtn.addEventListener('click', () => {
+                                            const link = "http://incajata.org.pe/proyectos/Proyecto_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf";
+                                            navigator.clipboard.writeText(link).then(() => {
+                                                alert("¡Enlace del proyecto copiado al portapapeles!");
+                                            }).catch(err => {
+                                                console.error("Error al copiar el enlace del proyecto: ", err);
+                                            });
                                         });
-                                    });
+                                    }
+
+                                    // Botón para copiar enlace de la PRESENTACIÓN
+                                    const copyPresentationBtn = document.getElementById('copyPresentationBtn');
+                                    if (copyPresentationBtn) {
+                                        copyPresentationBtn.addEventListener('click', () => {
+                                            const link = "http://incajata.org.pe/proyectos/Presentacion_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf";
+                                            navigator.clipboard.writeText(link).then(() => {
+                                                alert("¡Enlace de la presentación copiado al portapapeles!");
+                                            }).catch(err => {
+                                                console.error("Error al copiar el enlace de la presentación: ", err);
+                                            });
+                                        });
+                                    }
                                 </script>
+
 
 
 
