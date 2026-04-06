@@ -146,7 +146,7 @@
                                 </tr>
                                 <tr class="bg-gray-50">
                                     <td class="px-4 py-2 font-semibold"><strong>Project status:</strong></td>
-                                    <td class="px-4 py-2">Exploration (initial)</td>
+                                    <td class="px-4 py-2">Initial</td>
                                 </tr>
                                 <tr class="bg-gray-50">
                                     <td class="px-4 py-2 font-semibold"><strong>Project Ownership:</strong></td>
@@ -161,15 +161,11 @@
                                     <td class="px-4 py-2">Gold</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-4 py-2 font-semibold"><strong>Report Code:</strong></td>
-                                    <td class="px-4 py-2">43-101</td>
-                                </tr>
-                                <!-- <tr>
                                     <td class="px-4 py-2 font-semibold"><strong>Project:</strong></td>
-                                    <td class="px-4 py-2 flex flex-wrap items-center gap-2"> v 5.0
-                                        <a href="proyectos/Proyecto_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf" download
+                                    <td class="px-4 py-2 flex flex-wrap items-center gap-2"> v 6.0
+                                        <a href="http://incajata.org.pe/proyectos/Proyecto_PAN_KOTSKYI_Oro_v6.pdf" download
                                             class="btn btn-primary btn-sm flex items-center gap-1" target="_blank">
-                                            <i class="fa fa-download"></i> Download PDF (16.1 MB)
+                                            <i class="fa fa-download"></i> Download PDF (10 MB)
                                         </a>
                                         <button id="copyProjectBtn"
                                             class="btn btn-primary btn-sm flex items-center gap-1"
@@ -177,28 +173,15 @@
                                             <i class="fa fa-copy"></i> Copy link
                                         </button>
                                     </td>
-                                </tr> -->
-                                <tr>
-                                    <td class="px-4 py-2 font-semibold"><strong>Presentation:</strong></td>
-                                    <td class="px-4 py-2 flex flex-wrap items-center gap-2"> v 5.0
-                                        <a href="proyectos/Presentation_PAN_KOTSKYI_Gold_2025_v5.pdf" download
-                                            class="btn btn-primary btn-sm flex items-center gap-1" target="_blank">
-                                            <i class="fa fa-download"></i> Download PDF (9.81 MB)
-                                        </a>
-                                        <button id="copyPresentationBtn"
-                                            class="btn btn-primary btn-sm flex items-center gap-1"
-                                            title="Copiar enlace">
-                                            <i class="fa fa-copy"></i> Copy link
-                                        </button>
-                                    </td>
                                 </tr>
+                        
 
                                 <script>
                                     // Botón para copiar enlace del PROYECTO
                                     const copyProjectBtn = document.getElementById('copyProjectBtn');
                                     if (copyProjectBtn) {
                                         copyProjectBtn.addEventListener('click', () => {
-                                            const link = "http://incajata.org.pe/proyectos/Proyecto_PAN_KOTSKYI_NI43-101_Oro_2025_v5.pdf";
+                                            const link = "http://incajata.org.pe/proyectos/Proyecto_PAN_KOTSKYI_Oro_v6.pdf";
                                             navigator.clipboard.writeText(link).then(() => {
                                                 alert("Project link copied to clipboard!");
                                             }).catch(err => {
@@ -207,18 +190,7 @@
                                         });
                                     }
 
-                                    // Botón para copiar enlace de la PRESENTACIÓN
-                                    const copyPresentationBtn = document.getElementById('copyPresentationBtn');
-                                    if (copyPresentationBtn) {
-                                        copyPresentationBtn.addEventListener('click', () => {
-                                            const link = "http://incajata.org.pe/en/proyectos/Presentation_PAN_KOTSKYI_Gold_2025_v5.pdf";
-                                            navigator.clipboard.writeText(link).then(() => {
-                                                alert("¡Presentation link copied to clipboard!");
-                                            }).catch(err => {
-                                                console.error("Error copying presentation link: ", err);
-                                            });
-                                        });
-                                    }
+                                   
                                 </script>
 
 
