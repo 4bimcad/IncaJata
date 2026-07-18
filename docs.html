@@ -206,7 +206,10 @@
             <!-- STANISLAV TSVITKOV -->
             <div class="row justify-content-center mt-4">
                 <div class="col-lg-8 text-center">
-                    <h6 class="text-uppercase text-muted mb-3">Stanislav Tsvitkov</h6>
+                    <div class="mb-3">
+                        <span class="text-uppercase text-muted fw-bold">Stanislav Tsvitkov</span><br>
+                        <span class="small text-muted">Gerente General</span>
+                    </div>
 
                     <table class="table mx-auto" style="background: transparent; border-color: rgba(0,0,0,.08);">
                         <tbody>
@@ -281,24 +284,28 @@
     <!-- End Docs -->
 
     <style>
-@media print {
-    .no-print {
-        display: none !important;
-    }
-    body * {
-        visibility: hidden;
-    }
-    #docsPdfSection, #docsPdfSection * {
-        visibility: visible;
-    }
-    #docsPdfSection {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-    }
-}
-</style>
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+
+            body * {
+                visibility: hidden;
+            }
+
+            #docsPdfSection,
+            #docsPdfSection * {
+                visibility: visible;
+            }
+
+            #docsPdfSection {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    </style>
 
 
 
